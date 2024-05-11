@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../.././../assets/images/index.png";
 const GetInTouch = () => {
   return (
-    <div className="  min-h-[500px]  bg-red-400 -m-2">
+    <div className="  min-h-[600px] bg-gradient-to-r from-[#ff6900] to-[#fcb900] -m-2 flex flex-col justify-between ">
       <figure className="">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -15,13 +15,15 @@ const GetInTouch = () => {
           ></path>
         </svg>
       </figure>
-      <div className="hero-content text-center     mx-auto ">
+      <div className="hero-content text-center  mx-auto mt-10 text-white ">
         <div className="max-w-2xl text-center ">
           <h1 className="text-4xl font-bold">WANT TO GET IN TOUCH?</h1>
           <p className="py-6">
             We are looking forward to discussing your next project..
           </p>
-          <button className="btn btn-primary">Contact Us</button>
+          <button className=" bg-none text-white p-6 rounded-3xl border-2 border-white">
+            Contact Us
+          </button>
         </div>
       </div>
       <figure>
