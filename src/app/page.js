@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="container mx-auto flex flex-col gap-20 mb-10">
       <section
-        className="bg-no-repeat container mx-auto flex flex-col gap-20   "
+        className=" container mx-auto flex flex-col gap-20  bg-no-repeat "
         style={{
           backgroundImage: `url(${img.src})`,
           backgroundPosition: "center right",
