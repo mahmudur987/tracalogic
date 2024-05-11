@@ -4,13 +4,22 @@ import OurOffer from "@/components/Homepage/OurOffer/OurOffer";
 import GetInTouch from "@/components/Homepage/GetInTouch/GetInTouch";
 import CustomerReviews from "@/components/Homepage/CustomerReviews/CustomerReviews";
 import Footer from "@/components/Common/Footer/Footer";
-
+import img from "../assets/images/homepage/wave2.png";
 export default function Home() {
   return (
-    <main className="container flex flex-col gap-20 mb-10">
-      <Banner />
+    <main className="container mx-auto flex flex-col gap-20 mb-10">
+      <section
+        className="bg-no-repeat container mx-auto flex flex-col gap-20   "
+        style={{
+          backgroundImage: `url(${img.src})`,
+          backgroundPosition: "center right",
+          backgroundSize: "50%",
+        }}
+      >
+        <Banner />
 
-      <TerminalOperatingSystem />
+        <TerminalOperatingSystem />
+      </section>
 
       <OurOffer />
 

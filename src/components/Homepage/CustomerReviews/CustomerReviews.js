@@ -1,4 +1,4 @@
-// components/CustomerReviews.js
+import img from "../../../assets/images/homepage/wave1.png";
 const CustomerReviews = () => {
   const reviews = [
     {
@@ -22,28 +22,33 @@ const CustomerReviews = () => {
   ];
 
   return (
-    <div className="max-2xl mx-auto mt-10 my-3">
-      <h2 className="text-2xl font-bold mb-4 text-center">
-        WHAT OUR CUSTOMERS THINK
-      </h2>
-      <div className="flex gap-10 justify-center">
-        {reviews.map((review) => (
-          <div
-            key={review.id}
-            className="text-center bg-white p-6 rounded-lg border shadow-xl w-72 "
-          >
-            <p className="text-lg font-semibold">{review.name}</p>
-            <p className="text-gray-600 text-sm">
-              {review.comment.slice(0, 60)}
-            </p>
+    <section
+      className="container mx-auto bg-cover bg-top"
+      style={{ backgroundImage: `url(${img.src})` }}
+    >
+      <div className="max-2xl mx-auto mt-10 my-3">
+        <h2 className="text-2xl font-bold mb-4 text-center">
+          WHAT OUR CUSTOMERS THINK
+        </h2>
+        <div className="flex gap-10 justify-center">
+          {reviews.map((review) => (
+            <div
+              key={review.id}
+              className="text-center bg-white p-6 rounded-lg border shadow-xl w-72 "
+            >
+              <p className="text-lg font-semibold">{review.name}</p>
+              <p className="text-gray-600 text-sm">
+                {review.comment.slice(0, 60)}
+              </p>
 
-            <button className="mt-2 text-blue-600 hover:underline">
-              Read More
-            </button>
-          </div>
-        ))}
+              <button className="mt-2 text-blue-600 hover:underline">
+                Read More
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

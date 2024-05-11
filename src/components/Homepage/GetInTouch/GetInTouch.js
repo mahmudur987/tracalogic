@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../.././../assets/images/index.png";
 const GetInTouch = () => {
   return (
-    <div className="  min-h-[600px] bg-gradient-to-r from-[#ff6900] to-[#fcb900] -m-2 flex flex-col justify-between ">
+    <div className="min-h-[600px] bg-gradient-to-r from-[#ff6900] to-[#fcb900] -m-2 flex flex-col justify-between ">
       <figure className="">
         <svg
           xmlns="http://www.w3.org/2000/svg"
