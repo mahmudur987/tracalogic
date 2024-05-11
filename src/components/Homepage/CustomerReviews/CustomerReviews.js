@@ -1,4 +1,4 @@
-import img from "../../../assets/images/homepage/wave1.png";
+import img from "../../../assets/images/homepage/wave3.png";
 const CustomerReviews = () => {
   const reviews = [
     {
@@ -24,7 +24,9 @@ const CustomerReviews = () => {
   return (
     <section
       className="container mx-auto bg-cover bg-top"
-      style={{ backgroundImage: `url(${img.src})` }}
+      style={{
+        backgroundImage: `url(${img.src})`,
+      }}
     >
       <div className="max-2xl mx-auto mt-10 my-3">
         <h2 className="text-2xl font-bold mb-4 text-center">

@@ -13,7 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
+        <div className="fixed  top-0 w-full">
+          <Navbar />
+        </div>
 
         {children}
       </body>
